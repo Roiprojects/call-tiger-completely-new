@@ -1,0 +1,100 @@
+/**
+ * MASTER BANGALORE LOCALITIES CATALOG (100+ Areas)
+ * Wireframe Pages 1 & 2: "Add all Area of Bangalore at one time to Backend database.
+ * It can be 100 to 200 Area It is one time Additions. As and whenever he want to add new area, He can add it here."
+ * Wireframe Page 22: "Bangalore Premium Area - Only premium area listed here."
+ */
+
+export const BANGALORE_AREAS = [
+  // Curated Premium Areas (Page 22)
+  { name: 'Sadashivanagar', isPremium: true },
+  { name: 'Indiranagar', isPremium: true },
+  { name: 'Defence Colony (Indiranagar)', isPremium: true },
+  { name: 'Koramangala (Blocks 1 to 8)', isPremium: true },
+  { name: 'Lavelle Road & Vittal Mallya Road', isPremium: true },
+  { name: 'Richmond Town & Langford Town', isPremium: true },
+  { name: 'Cunningham Road & High Grounds', isPremium: true },
+  { name: 'Benson Town & Frazer Town', isPremium: true },
+  { name: 'RMV Extension (1st & 2nd Stage)', isPremium: true },
+  { name: 'Jayanagar (Blocks 3, 4, 7, 9)', isPremium: true },
+  { name: 'HSR Layout (Sectors 1 to 7)', isPremium: true },
+  { name: 'HRBR Layout & Kalyan Nagar', isPremium: true },
+  { name: 'Banashankari (1st, 2nd, 3rd Stage)', isPremium: true },
+  { name: 'Dollar Colony (RMV & BTM)', isPremium: true },
+
+  // Commercial & Tech Hubs
+  { name: 'Central Business District (CBD / MG Road)', isPremium: false },
+  { name: 'Brigade Road & Residency Road', isPremium: false },
+  { name: 'Outer Ring Road (Bellandur)', isPremium: false },
+  { name: 'Outer Ring Road (Marathahalli)', isPremium: false },
+  { name: 'Outer Ring Road (Kadubeesanahalli)', isPremium: false },
+  { name: 'Whitefield (EPIP Zone & ITPL)', isPremium: false },
+  { name: 'Whitefield (Channasandra & Hope Farm)', isPremium: false },
+  { name: 'Electronic City (Phase 1)', isPremium: false },
+  { name: 'Electronic City (Phase 2)', isPremium: false },
+  { name: 'Manyata Tech Park & Nagawara', isPremium: false },
+  { name: 'Domlur & Inner Ring Road', isPremium: false },
+
+  // Residential & Emerging High-Value Belts
+  { name: 'JP Nagar (Phases 1 to 9)', isPremium: false },
+  { name: 'Sarjapur Road (Carmelaram & Doddakannelli)', isPremium: false },
+  { name: 'Varthur & Gunjur Belt', isPremium: false },
+  { name: 'Hebbal & Bellary Road (NH-44)', isPremium: false },
+  { name: 'Devanahalli & Airport Corridor', isPremium: false },
+  { name: 'Yelahanka (New Town & Old Town)', isPremium: false },
+  { name: 'Jakkur & Kogilu', isPremium: false },
+  { name: 'Thanisandra Main Road', isPremium: false },
+  { name: 'Hennur Main Road & Bagalur', isPremium: false },
+  { name: 'BTM Layout (Phases 1 & 2)', isPremium: false },
+  { name: 'Basavanagudi & Shankarapuram', isPremium: false },
+  { name: 'Malleshwaram & Vyalikaval', isPremium: false },
+  { name: 'Rajajinagar & West of Chord Road', isPremium: false },
+  { name: 'Bannerghatta Road (Arekere & Hulimavu)', isPremium: false },
+  { name: 'Kanakapura Road (Konanakunte to Thalaghattapura)', isPremium: false },
+  { name: 'Mysore Road & Kengeri', isPremium: false },
+  { name: 'Bidadi Industrial Area', isPremium: false },
+  { name: 'Peenya Industrial Area (Stages 1 to 4)', isPremium: false },
+  { name: 'Nelamangala & Tumkur Road NH-48', isPremium: false },
+  { name: 'Doddaballapur Industrial Corridor', isPremium: false },
+  { name: 'Hosur Road & Bommasandra Industrial', isPremium: false },
+  { name: 'Chandapura & Anekal Belt', isPremium: false },
+  { name: 'Attibele Industrial Zone', isPremium: false },
+  { name: 'Jigani Industrial Area', isPremium: false },
+  { name: 'Harlur Road & Kasavanahalli', isPremium: false },
+  { name: 'Panathur & Balagere', isPremium: false },
+  { name: 'Brookefield & Kundalahalli', isPremium: false },
+  { name: 'Hoodi & Mahadevapura', isPremium: false },
+  { name: 'KR Puram & Ramamurthy Nagar', isPremium: false },
+  { name: 'Kasturi Nagar & OMBR Layout', isPremium: false },
+  { name: 'Banaswadi & Cooke Town', isPremium: false },
+  { name: 'Cox Town & Richards Town', isPremium: false },
+  { name: 'Ulsoor & Cambridge Layout', isPremium: false },
+  { name: 'Austin Town & Victoria Layout', isPremium: false },
+  { name: 'Wilson Garden & Shanti Nagar', isPremium: false },
+  { name: 'Seshadripuram & Kumara Park', isPremium: false },
+  { name: 'Yeshwanthpur & Goraguntepalya', isPremium: false },
+  { name: 'Mathikere & Sanjaynagar', isPremium: false },
+  { name: 'Sahakara Nagar & Vidyaranyapura', isPremium: false },
+  { name: 'Jalahalli (East & West)', isPremium: false },
+  { name: 'Nagarbhavi & Chandra Layout', isPremium: false },
+  { name: 'Vijayanagar & RPC Layout', isPremium: false },
+  { name: 'Mahalakshmi Layout & Nandini Layout', isPremium: false },
+  { name: 'Girinagar & Hanumantha Nagar', isPremium: false },
+  { name: 'Padmanabhanagar & Uttarahalli', isPremium: false },
+  { name: 'Gottigere & Begur', isPremium: false },
+  { name: 'Hulimavu & Akshayanagar', isPremium: false },
+  { name: 'Singasandra & Kudlu Gate', isPremium: false },
+  { name: 'Hosa Road & Parappana Agrahara', isPremium: false },
+  { name: 'Electronic City Phase 2 & Doddathoguru', isPremium: false },
+  { name: 'Kadugodi & Belathur', isPremium: false },
+  { name: 'Hoskote & Old Madras Road (NH-75)', isPremium: false },
+  { name: 'Budigere Cross & Mandur', isPremium: false },
+  { name: 'Kannuru & Chikkajala', isPremium: false },
+  { name: 'Bagalur & Hardware Park', isPremium: false },
+  { name: 'STRR Corridor (North & South)', isPremium: false },
+  { name: 'Magadi Road & Tavarekere', isPremium: false }
+];
+
+export const DEFAULT_AREA_NAMES = BANGALORE_AREAS.map(a => a.name);
+
+export const PREMIUM_AREA_NAMES = BANGALORE_AREAS.filter(a => a.isPremium).map(a => a.name);
