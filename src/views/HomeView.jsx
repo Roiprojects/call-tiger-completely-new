@@ -100,7 +100,7 @@ export default function HomeView({ onOpenEditLetter, onOpenCollaborate, onOpenEx
           <span>CURATED VS. FULL BANGALORE REGISTRY</span>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.25rem' }}>
+        <div className="area-hub-grid">
           <button
             type="button"
             className="primary-category-btn"
@@ -111,7 +111,7 @@ export default function HomeView({ onOpenEditLetter, onOpenCollaborate, onOpenEx
               💎
             </div>
             <div className="cat-btn-body">
-              <span className="cat-btn-title" style={{ fontSize: '1.65rem' }}>Premium Area</span>
+              <span className="cat-btn-title">Premium Area</span>
               <span className="cat-btn-sub">Only High-Value Prime Localities Listed Here</span>
               <div className="cat-btn-tags">
                 <span className="cat-mini-tag">Sadashivanagar</span>
@@ -136,7 +136,7 @@ export default function HomeView({ onOpenEditLetter, onOpenCollaborate, onOpenEx
               📍
             </div>
             <div className="cat-btn-body">
-              <span className="cat-btn-title" style={{ fontSize: '1.65rem' }}>All Area of Bangalore</span>
+              <span className="cat-btn-title">All Area of Bangalore</span>
               <span className="cat-btn-sub">Where We Have Verified Properties Listed</span>
               <div className="cat-btn-tags">
                 <span className="cat-mini-tag">Complete Directory</span>
@@ -244,28 +244,14 @@ export default function HomeView({ onOpenEditLetter, onOpenCollaborate, onOpenEx
       </section>
 
       {/* 5. PDF / Word Format Download Banner (Page 10 & 21 Wireframes) */}
-      <section
-        style={{
-          background: 'var(--bg-surface)',
-          border: '1.5px solid var(--border-medium)',
-          borderRadius: 'var(--radius-md)',
-          padding: '1.25rem 1.65rem',
-          margin: '2rem 0',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '1.25rem',
-          flexWrap: 'wrap',
-          boxShadow: 'var(--shadow-sm)'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <div style={{ fontSize: '2rem' }}>📥</div>
+      <section className="download-cta-banner">
+        <div className="download-cta-left">
+          <div className="download-cta-icon">📥</div>
           <div>
-            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.45rem', fontWeight: 700, margin: 0 }}>
+            <h3 className="download-cta-title">
               PDF Format or Word Format of All Properties
             </h3>
-            <p style={{ fontSize: '0.84rem', color: 'var(--text-secondary)', margin: '2px 0 0 0' }}>
+            <p className="download-cta-sub">
               Download complete formatted property briefs to your mobile or desktop with 1-click.
             </p>
           </div>
@@ -273,9 +259,8 @@ export default function HomeView({ onOpenEditLetter, onOpenCollaborate, onOpenEx
 
         <button
           type="button"
-          className="btn-primary-submit"
+          className="btn-primary-submit download-cta-btn"
           onClick={onOpenExport}
-          style={{ whiteSpace: 'nowrap' }}
         >
           📄 Choose Download Format &rarr;
         </button>

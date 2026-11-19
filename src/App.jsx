@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from './context/AppContext';
 import Header from './components/Header';
+import MobileBottomBar from './components/MobileBottomBar';
 import HomeView from './views/HomeView';
 import PremiumAreaView from './views/PremiumAreaView';
 import AllAreaView from './views/AllAreaView';
@@ -136,6 +137,9 @@ export default function App() {
       <div className={`toast-notification ${toastMessage ? 'show' : ''}`} role="status">
         {toastMessage}
       </div>
+
+      {/* Luxury Mobile Bottom Dock (<= 768px) */}
+      <MobileBottomBar onOpenCollaborate={() => setIsCollaborateOpen(true)} />
     </>
   );
 }

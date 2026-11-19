@@ -61,7 +61,7 @@ export default function RequirementBox() {
       </div>
 
       <form onSubmit={handleSubmit} style={{ marginTop: '1.25rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.9rem', marginBottom: '1rem' }}>
+        <div className="req-form-grid">
           <div>
             <label style={{ display: 'block', fontSize: '0.74rem', fontFamily: 'var(--font-mono)', color: '#D9D4C7', marginBottom: '0.35rem', textTransform: 'uppercase' }}>
               Your Mobile Number *
@@ -91,7 +91,7 @@ export default function RequirementBox() {
             />
           </div>
 
-          <div style={{ gridColumn: 'span 2' }}>
+          <div className="req-field-span-2">
             <label style={{ display: 'block', fontSize: '0.74rem', fontFamily: 'var(--font-mono)', color: '#D9D4C7', marginBottom: '0.35rem', textTransform: 'uppercase' }}>
               Specific Property Requirement (Locality, Budget &amp; Scale) *
             </label>
@@ -107,11 +107,11 @@ export default function RequirementBox() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
+        <div className="req-footer-row">
           <span style={{ fontSize: '0.76rem', color: '#B4B0A6', fontFamily: 'var(--font-mono)' }}>
             ✓ Instant Lead Logged to Dashboard &bull; Direct Message to +91 97404 02975
           </span>
-          <button type="submit" className="btn-share-listing-cta" style={{ width: 'auto', padding: '0.75rem 1.6rem' }}>
+          <button type="submit" className="btn-share-listing-cta req-submit-btn">
             <span>💬 Send Requirement via WhatsApp &rarr;</span>
           </button>
         </div>
